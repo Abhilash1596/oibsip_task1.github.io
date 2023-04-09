@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<h2 class="logo"><span>F</span><img src="smiley.png"><img src="smiley.png"><span>DY</span></h2>
+			<ul>
+				<li><a herf="#"> Home</a></li>
+				<li><a herf="#"> What's New</a></li>
+				<li><a herf="#"> Menu</a></li>
+				<li><a herf="#"> Contact</a></li>
+			</ul>
+		</header>	
+
+	
+		<content>
+			<div class="textbox">
+				<div>
+					<h1 class="gf">GOOD <span>FOOD</span>,</h1>
+					<h1 class="gl">GOOD <span>LIFE</span></h1>
+				</div>
+				<div class="des">
+					<h2 class="itm">BURGER</h2>
+					<p class="para">A hamburger, or simply burger, is a sandwich consisting of fillings usually a patty of ground meat, typically 	beef-placed inside a sliced bun or bread roll.</p>
+					<a href="#">Learn More</a>	
+				</div>
+				
+			</div>
+			<div class="imgbox">
+				<img src="img1.png" class="food">
+			</div>
+			
+				
+			
+
+			<ul class="thumb">
+				<li><img src="img1.png" onclick="slide('img1.png'); changename('BURGER'); par('A hamburger, or simply burger, is a sandwich consisting of fillings usually a patty of ground meat, typically beef-placed inside a sliced bun or bread roll.')"></li>
+				<li><img src="img5.png" onclick="slide('img5.png'); changename('CHICKEN BARBECUE'); par('Barbecue chicken consists of chicken parts or entire chickens that are barbecued, grilled or smoked. There are many global and regional preparation techniques and cooking styles. Barbecue chicken is often seasoned or coated in a spice rub, barbecue sauce, or both.')"></li>
+				<li><img src="img3.png" onclick="slide('img3.png'); changename('PIZZA'); par('Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta.')"></li>
+				<li><img src="img4.png" onclick="slide('img4.png'); changename('CHICKEN LOLIPOP'); par('Chicken lollipop is a popular Indian fried chicken appetiser. Chicken lollipop is, essentially a frenched chicken winglet, wherein the meat is cut loose from the bone end and pushed down creating a lollipop appearance. ')"></li>
+			</ul>
+
+			<ul class="sci">
+				<li><a href="#"><img src="facebook.png"></a></li>
+				<li><a href="#"><img src="twitter.png"></a></li>
+				<li><a href="#"><img src="instagram.png"></a></li>
+			</ul>
+		</content>
+	</section>
+	<script type="text/javascript">
+		function slide(anything) {
+			document.querySelector('.food').src = anything;
+		}
+		function changename(nm)
+		{
+			document.querySelector('.itm').innerHTML=nm;
+		}
+		function par(pr)
+		{
+			document.querySelector('.para').innerHTML=pr;
+		}
+	</script>
+</body>
+</html>
